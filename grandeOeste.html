@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Procedimentos</title>
+  </head>
+  <body>
+
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0">
+<!-- Get the leaflet CSS file -->
+<link rel="stylesheet" href=
+"https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+    
+</head>
+<body>
+
+
+<div class="alert alert-primary" role="alert">
+  <h1>CONSULTA EM GASTROENTEROLOGIA</h1>
+    <a href="index.html">Inicio</a>
+  </div>
+
+
+
+<!-- Specify the map and it's dimensions -->
+<div id="map" style="width: 1200px; height: 600px"></div>
+  
+<!-- Get the leaflet JavaScript file -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div class="Container">
+<script>
+
+    const map = L.map('map')
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  
+      
+    map.setView([-26.5371, -53.3312], 5);
+    map.setView([-26.7678, -53.6395], 5);
+    map.setView([-26.6531, -53.4401], 5);
+    map.setView([-26.8437, -53.5781], 5);
+    map.setView([-26.6915, -53.0959], 5);
+    map.setView([-26.8247, -53.5017], 5);
+    map.setView([-26.2650, -53.6363], 5);
+    map.setView([-26.7791, -53.3472], 5);
+    map.setView([-26.5985, -53.5242], 5);
+    map.setView([-26.3853, -53.5270], 5);
+    map.setView([-26.9882, -53.5346], 5);
+    map.setView([-26.8237, -53.2746], 5);
+    map.setView([-27.1719, -53.7130], 5);
+    map.setView([-26.7606, -53.1750], 5);
+    map.setView([-26.7793, -53.0521], 5);
+    map.setView([-27.1019, -53.3991], 5);
+    map.setView([-26.3479, -53.2782], 5);
+    map.setView([-26.6192, -53.6736], 5);
+    map.setView([-26.4446, -53.5999], 5);
+    map.setView([-26.6775, -53.3190], 5);
+    map.setView([-26.6029, -53.0570], 5);
+    map.setView([-26.6029, -53.0570], 5);
+    map.setView([-26.9393, -53.6202], 5);
+    map.setView([-26.6194, -53.1981], 5);
+    map.setView([-26.4555, -53.4994], 5);
+    map.setView([-27.0992, -53.5926], 5);
+    map.setView([-26.7260, -53.5204], 5);
+    map.setView([-26.9260, -53.0048], 5);
+    map.setView([-26.6868, -53.1570], 5);
+    map.setView([-26.9708, -53.6380], 5);
+
+
+
+
+    let eiffelMarker = L.marker([-26.5371, -53.3312]).addTo(map);
+    let saojose = L.marker([-26.7678, -53.6395]).addTo(map);
+    let bb = L.marker([-26.6531, -53.4401]).addTo(map);
+    let belmonte = L.marker([-26.8437, -53.5781]).addTo(map);
+    let bomjesus = L.marker([-26.6915, -53.0959]).addTo(map);
+    let Descanso = L.marker([-26.8247, -53.5017]).addTo(map);
+    let Dionisio = L.marker([-26.2650, -53.6363]).addTo(map);
+    let flor = L.marker([-26.7791, -53.3472]).addTo(map);
+    let guaraciaba = L.marker([-26.5985, -53.5242]).addTo(map);
+    let guaruja = L.marker([-26.3853, -53.5270]).addTo(map);
+    let ipora = L.marker([-26.9882, -53.5346]).addTo(map);
+    let Iraceminha= L.marker([-26.8237, -53.2746]).addTo(map);
+    let Itapiranga= L.marker([-27.1719, -53.7130]).addTo(map);
+    let Maravilha= L.marker([-26.7606, -53.1750]).addTo(map);
+    let Modelo= L.marker([-26.7793, -53.0521]).addTo(map);
+    let Mondai= L.marker([-27.1019, -53.3991]).addTo(map);
+    let Palma= L.marker([-26.3479, -53.2782]).addTo(map);
+    let Paraiso= L.marker([-26.6192, -53.6736]).addTo(map);
+    let Princesa= L.marker([-26.4446, -53.5999]).addTo(map);
+    let Romelandia= L.marker([-26.6775, -53.3190]).addTo(map);
+    let Saltinho= L.marker([-26.6029, -53.0570]).addTo(map);
+    let Santa= L.marker([-26.9393, -53.6202]).addTo(map);
+    let Terezinha= L.marker([-26.6194, -53.1981]).addTo(map);
+    let jose= L.marker([-26.4555, -53.4994]).addTo(map);
+    let sjoeste= L.marker([-27.0992, -53.5926]).addTo(map);
+    let Miguel= L.marker([-26.7260, -53.5204]).addTo(map);
+    let Saudades= L.marker([-26.9260, -53.0048]).addTo(map);
+    let Tigrinhos= L.marker([-26.6868, -53.1570]).addTo(map);
+    let Tunapolis = L.marker([-26.9708, -53.6380]).addTo(map);
+
+
+
+
+    eiffelMarker.bindPopup("Anchieta").openPopup();
+    saojose.bindPopup("Bandeirante").openPopup();
+    bb.bindPopup("Barra Bonita").openPopup();
+    belmonte.bindPopup("Belmonte").openPopup();
+    bomjesus.bindPopup("Bom Jesus Do Oeste").openPopup();
+    Descanso.bindPopup("Descanso").openPopup();
+    Dionisio.bindPopup("Dionisio Cerqueira ").openPopup();
+    flor.bindPopup("Flor do Sertão ").openPopup();
+    guaraciaba.bindPopup("Guaraciaba ").openPopup();
+    guaruja.bindPopup("Guaruja do Sul ").openPopup();
+    ipora.bindPopup("Iporã do Oeste ").openPopup();
+    Iraceminha.bindPopup("Iraceminha ").openPopup();
+    Itapiranga.bindPopup("Itapiranga ").openPopup();
+    Maravilha.bindPopup("Maravilha ").openPopup();
+    Modelo.bindPopup("Modelo").openPopup();
+    Mondai.bindPopup("Mondai").openPopup();
+    Palma.bindPopup("Palma Sola").openPopup();
+    Paraiso.bindPopup("Paraiso").openPopup();
+    Princesa.bindPopup("Princesa").openPopup();
+    Romelandia.bindPopup("Romelandia").openPopup();
+    Saltinho.bindPopup("Saltinho").openPopup();
+    Santa.bindPopup("Santa Helena").openPopup();
+    Terezinha.bindPopup("Santa Teresinha do Progresso").openPopup();
+    jose.bindPopup("Santa Jose do Cedro").openPopup();
+    sjoeste.bindPopup("São João do Oeste").openPopup();
+    Miguel.bindPopup("São Miguel do Oeste").openPopup();
+    Saudades.bindPopup("Saudades").openPopup();
+    Tigrinhos.bindPopup("Tigrinhos").openPopup();
+    Tunapolis.bindPopup("Tunapolis").openPopup();
+
+
+        
+</script>
+
+
+</div>
+
+<div class="Container">
+  <div class="alert alert-primary" role="alert">
+    <table class="table">
+              <tbody>
+           
+            <tr>
+            <th scope="row">G.OESTE</th>
+            <td>6008763</td>
+            <td>0701417</td>
+            <td>@CONSULTA EM GASTROENTEROLOGIA - ADULTO</td>
+            <td>JAMYLA</td>
+            <td>#</td>
+            <td>HRTGB</td>
+            <td>Anchieta, Bandeirante, Barra Bonita, Belmonte, Bom Jesus Do Oeste, Descanso, Dionisio Cerqueira, Flor Do Sertão, Guaraciaba, Guaruja Do Sul, Ipora Do Oeste, Iraceminha Itapiranga, Maravilha, Modelo, Mondai, Palma Sola, Paraiso, Princesa, Romelandia, Saltinho, Santa Helena, Santa Terezinha Do Progresso, São José Do Cedro, São João Do Oeste, São Miguel Do Oeste, Saudades, Tigrinhos, Tunapolis *</td>
+        </tbody>
+      </table>
+  </div>
+</div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

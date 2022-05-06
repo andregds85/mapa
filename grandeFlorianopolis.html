@@ -24,7 +24,6 @@
 <body>
 
 
-
 <div class="alert alert-primary" role="alert">
   <h1>CONSULTA EM GASTROENTEROLOGIA</h1>
     <a href="index.html">Inicio</a>
@@ -45,53 +44,71 @@
 <div class="Container">
 <script>
 
-    // Initialize the map
     const map = L.map('map')
-  
-    // Get the tile layer from OpenStreetMaps
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  
-    // Specify the maximum zoom of the map
     maxZoom: 19,
-  
-    // Set the attribution for OpenStreetMaps
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
   
-    // Set the view of the map
-    // with the latitude, longitude and the zoom value
-    map.setView([-26.5371, -53.3312], 5);
-    map.setView([-26.7678, -53.6395], 5);
-    map.setView([-26.6531, -53.4401], 5);
-    map.setView([-26.8437, -53.5781], 5);
+     
+
+    /*Abelardo Luz */
+    map.setView([-26.5672, -52.3339], 5);
+
+    /*Águas Mornas */
+    map.setView([-27.6956,-48.8234], 5);
+
+    /*Alfredo Wagner */
+    map.setView([-27.6992, -49.3350], 5);
+
+   /* Angelina */
+    map.setView([ -27.5733389, -48.9843647], 5);
+
+    /* Anitápolis */
+    map.setView([-27.9025, -49.1291], 5);
+
+    /*Antônio Carlos, */ 
+    map.setView([-27.5179, -48.7685], 5);
 
 
-    
-    // Set the map view to the user's location
-    // Uncomment below to set map according to user location
-    // map.locate({setView: true, maxZoom: 16});
-  
-    let eiffelMarker = L.marker([-26.5371, -53.3312]).addTo(map);
-    let saojose = L.marker([-26.7678, -53.6395]).addTo(map);
-    let bb = L.marker([-26.6531, -53.4401]).addTo(map);
-    let belmonte = L.marker([-26.8437, -53.5781]).addTo(map);
+    let Abelardo = L.marker([-26.5672,-52.3339]).addTo(map);
+    let aguasMornas = L.marker([-27.6956,-48.8234]).addTo(map);
+    let Alfredo = L.marker([-27.6992, -49.3350]).addTo(map);
+    let Angelina = L.marker([-27.5733389, -48.9843647]).addTo(map);
+    let Anitapolis = L.marker([-27.9025, -49.1291]).addTo(map);
+    let Antonio = L.marker([-27.5179, -48.7685]).addTo(map);
 
+      
+    Abelardo.bindPopup("Abelardo Luz").openPopup();
+    aguasMornas.bindPopup("Águas Mornas").openPopup();
+    Alfredo.bindPopup("Alfredo Wagner").openPopup();
+    Angelina.bindPopup("Angelina").openPopup();
+    Anitapolis.bindPopup("Anitapolis").openPopup();
+    Antonio.bindPopup("Antônio Carlos").openPopup();
 
-
-   
-    // Bind popup to the marker with a popup
-    eiffelMarker.bindPopup("Anchieta").openPopup();
-    saojose.bindPopup("Bandeirante").openPopup();
-    bb.bindPopup("Barra Bonita").openPopup();
-    belmonte.bindPopup("Belmonte").openPopup();
-
-
-
-
-
+        
 </script>
 
 
+</div>
+
+<div class="Container">
+  <div class="alert alert-primary" role="alert">
+    <table class="table">
+              <tbody>
+           
+            <tr>
+            <th scope="row">Grande Floranópolis</th>
+            <td>2692260</td>
+            <td>0701417</td>
+            <td>@CONSULTA EM GASTROENTEROLOGIA - ADULTO</td>
+            <td>TELMA</td>
+            <td>#</td>
+            <td>HU, HGCR</td>
+            <td>Abelardo Luz, Águas Mornas, Alfredo Wagner, Angelina, Anitápolis, Antônio Carlos, Balneário Gaivota, Biguaçu, Canelinha, Entre Rios, Faxinal dos Guedes, Floranópolis, Garopaba, Governador Celso Ramos, Imaruí, Jacinto Machado, Leoberto Leal, Major Gercino, Meleiro, Nova Trento, Palhoça, Paulo Lopes, Passo de Torres, Praia Grande, Rancho Queimado, Santo Amaro da Imperatriz, São Bonifácio, São João Batista, Santa Rosa do Sul, São João do Sul, Sombrio, Timbé do Sul, Turvo, Xanxerê e Xaxim.</td>
+        </tbody>
+      </table>
+  </div>
 </div>
 
 
@@ -102,5 +119,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
+
 
 
