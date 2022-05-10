@@ -1,13 +1,8 @@
 
 <script>
 
-
-
-/* Governador Celso */ 
-map.setView([-28.3442, -48.8160], 5);
-
-
-
+/* Timbé do Sul*/ 
+map.setView([-28.8324, -49.8459], 5);
 
 
 </scrpit>
@@ -15,13 +10,7 @@ map.setView([-28.3442, -48.8160], 5);
 
 
 
-
-
-
- Imaruí, Jacinto Machado, Leoberto Leal, Major Gercino,
-   Meleiro, Nova Trento, Palhoça, Paulo Lopes, Passo de Torres, Praia Grande, Rancho Queimado, 
-   Santo Amaro da Imperatriz, São Bonifácio, São João Batista, Santa Rosa do Sul, São João do Sul, 
-   Sombrio, Timbé do Sul, Turvo, Xanxerê e Xaxim.
+   Timbé do Sul, Turvo, Xanxerê e Xaxim.
 
 
 
